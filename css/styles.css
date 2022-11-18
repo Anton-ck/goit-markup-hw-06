@@ -3,6 +3,7 @@
  --secondary-color: #757575;
  --thirdy-color: #fff;
  --hover-link-color: #2196f3;
+ --hover-button: #188ce8;
  --logo-color: #2196f3;
  --gray: #2f303a;
  --light-gray: #ececec;
@@ -254,6 +255,13 @@ a {
  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
  border-radius: 4px;
  cursor: pointer;
+
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-btn:focus,
+.order-btn:hover {
+ background-color: var(--hover-button);
 }
 
 /* ------------------------------ */
@@ -629,6 +637,13 @@ a {
  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
  border-radius: 4px;
  cursor: pointer;
+
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscrib-button:hover,
+.subscrib-button:focus {
+ background-color: var(--hover-button);
 }
 
 .subscrib-icon {
@@ -664,8 +679,8 @@ a {
  border-radius: 4px;
  cursor: pointer;
 
- transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ transition: background-color 1250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -827,11 +842,6 @@ a {
  background-color: var(--thirdy-color);
 }
 
-/* .modal-form {
- display: flex;
- flex-direction: column;
-} */
-
 .modal-title {
  margin-bottom: 12px;
  font-weight: 700;
@@ -843,9 +853,12 @@ a {
 }
 
 .modal-inputbox {
+ position: relative;
  display: flex;
  flex-direction: column;
  margin-bottom: 10px;
+ margin-left: auto;
+ margin-right: auto;
 }
 
 .modal-label {
@@ -859,29 +872,123 @@ a {
 }
 
 .modal-input {
- /* padding: 14px; */
+ padding: 5px 42px;
+ margin-left: auto;
+ margin-right: auto;
  width: 448px;
  height: 40px;
  border: 1px solid rgba(33, 33, 33, 0.2);
+
  border-radius: 4px;
+
+ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input-ico {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ position: absolute;
+ align-self: center;
+ top: 38px;
+ left: 12px;
+ transform: translateY(-50%);
+
+ fill: currentColor;
+
+ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea {
+ padding: 12px 16px;
+ margin-left: auto;
+ margin-right: auto;
+
  width: 448px;
+ height: 120px;
 
  border: 1px solid rgba(33, 33, 33, 0.2);
  border-radius: 4px;
+
+ resize: none;
+ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .modal-text {
- margin: 150px auto;
+.modal-input:focus,
+.modal-input:hover,
+.modal-textarea:focus,
+.modal-textarea:hover {
+ border: 1px solid var(--hover-link-color);
+ outline: none;
+}
 
+.modal-input:focus ~ .modal-input-ico,
+.modal-input:hover ~ .modal-input-ico {
+ fill: var(--hover-link-color);
+}
+
+.modal-textarea::placeholder {
+ font-size: 12px;
+ line-height: 14px;
+
+ letter-spacing: 0.01em;
+
+ color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-terms {
+ display: flex;
+ align-items: center;
+ margin-top: 10px;
  text-align: center;
+ line-height: 1.71;
+
+ color: var(--secondary-color);
+}
+
+.modal-checkbox {
+ display: inline-block;
+ width: 16px;
+ height: 15px;
+ background-color: #188ce8;
+}
+
+.modal-terms-link {
+ line-height: 1.71;
+ text-decoration: underline;
+ color: var(--hover-link-color);
+}
+
+.modal-subbutton {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 30px;
+ margin-left: auto;
+ margin-right: auto;
+ padding: 10px 0;
+ min-width: 200px;
+
+ font-family: inherit;
  font-weight: 700;
- font-size: 26px;
- line-height: 1.66;
+ font-size: var(--secondary-font-size);
+ line-height: 1.88;
+
+ color: var(--thirdy-color);
  letter-spacing: 0.06em;
-} */
+ background: var(--hover-link-color);
+ border: 0;
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ border-radius: 4px;
+ cursor: pointer;
+
+ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-subbutton:hover,
+.modal-subbutton:focus {
+ background: var(--hover-button);
+}
 
 .modal-close {
  display: flex;

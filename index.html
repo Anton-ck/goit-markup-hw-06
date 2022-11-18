@@ -426,28 +426,46 @@
 
   <div class="modal-order is-hidden" data-modal>
    <div class="modal-area">
-    <form class="modal-form">
-     <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+    <form class="modal-form" autocomplete="off">
+     <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+
      <div class="modal-inputbox">
       <label class="modal-label" for="firstname">Ім'я</label>
       <input class="modal-input" type="text" id="firstname" />
+      <svg class="modal-input-ico" height="18" width="18">
+       <use href="./images/spirite.svg#icon-person-black"></use>
+      </svg>
      </div>
 
      <div class="modal-inputbox">
       <label class="modal-label" for="tel">Телефон</label>
       <input class="modal-input" type="tel" name="tel" id="tel" />
+      <svg class="modal-input-ico" height="18" width="18">
+       <use href="./images/spirite.svg#icon-tel"></use>
+      </svg>
      </div>
 
      <div class="modal-inputbox">
       <label class="modal-label" for="email-modal">Пошта</label>
       <input class="modal-input" type="email" name="email-modal" id="email-modal" />
+      <svg class="modal-input-ico" height="18" width="18">
+       <use href="./images/spirite.svg#icon-mail"></use>
+      </svg>
      </div>
 
      <div class="modal-inputbox">
       <label class="modal-label" for="comment">Коментар</label>
 
-      <textarea class="modal-textarea" rows="7" name="comment" id="comment"></textarea>
+      <textarea class="modal-textarea" placeholder="Введіть текст" name="comment" id="comment"></textarea>
      </div>
+
+     <p class="modal-terms">
+      <input class="checkbox" type="checkbox" />
+      <span class="modal-checkbox"></span>
+      Погоджуюся з розсилкою та приймаю <a class="modal-terms-link" href="">Умови договору</a>
+     </p>
+
+     <button class="modal-subbutton" type="submit">Відправити</button>
     </form>
     <button class="modal-close" data-modal-close>
      <svg class="modal-close-icon" width="18" height="18">
