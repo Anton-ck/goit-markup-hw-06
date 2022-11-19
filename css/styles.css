@@ -1034,76 +1034,15 @@ a {
  border: 1px solid rgba(0, 0, 0, 0.1);
  border-radius: 50px;
  background-color: #fff;
+
  cursor: pointer;
 
- transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+ transition: fill 350ms cubic-bezier(0.4, 0, 0.2, 1), border 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover,
 .modal-close:focus {
  fill: var(--hover-link-color);
+
+ border-color: transparent;
 }
-
-/* .modal-area {
- animation-name: area-hideX.area-hideY;
- animation-duration: 1000ms.2000ms;
- animation-timing-function: linear, linear;
- animation-delay: 1000ms, 1000ms;
- animation-iteration-count: 9999;
- animation-fill-mode: both;
-}  */
-
-/* @keyframes area-hideY {
- 0% {
-  transform: translate(-50%, -50%) scale(0.1);
- }
-
-
-
- 50% {
-  transform: translate(-50%, -50%) scaleX(0.5);
- }
-
-
-
- 100% {
-  transform: translate(-50%, -50%) scale(1);
- }
-} */
-
-/* @keyframes area-hideY {
- 0% {
-  transform: translate(-50%, -50%) scaleY(0.1);
- }
-
- 20% {
-  transform: translate(-50%, -50%) scaleY(0.2);
- }
-
- 30% {
-  transform: translate(-50%, -50%) scaleY(0.3);
- }
-
- 50% {
-  transform: translate(-50%, -50%) scaleY(0.5);
- }
-
- 60% {
-  transform: translate(-50%, -50%) scaleY(0.6);
- }
-
- 70% {
-  transform: translate(-50%, -50%) scaleY(0.7);
- }
-
- 80% {
-  transform: translate(-50%, -50%) scaleX(0.8);
- }
- 90% {
-  transform: translate(-50%, -50%) scaleY(0.9);
- }
-
- 100% {
-  transform: translate(-50%, -50%) scaleY(1);
- }
-} */
