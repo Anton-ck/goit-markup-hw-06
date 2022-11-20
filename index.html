@@ -403,24 +403,21 @@
      </ul>
     </div>
 
-    <form class="subscrib-form">
+    <div class="subscrib-form">
      <p class="subscrib-title">Підпишіться на розсилку</p>
-     <ul class="subscrib-box">
-      <li class="subscrib-item">
-       <input class="subscrib-email" autocomplete="on" type="email" id="email" required placeholder=" " />
-       <label class="subscrib-label" for="email">E-mail</label>
-      </li>
-      <li class="subscrib-item">
-       <button class="subscrib-button" type="submit">
-        Підписатися
+     <form class="subscrib-box">
+      <input class="subscrib-email" autocomplete="on" type="email" id="email" required placeholder=" " />
+      <label class="subscrib-label" for="email">E-mail</label>
 
-        <svg class="subscrib-icon" width="24" height="24">
-         <use href="./images/spirite.svg#icon-send"></use>
-        </svg>
-       </button>
-      </li>
-     </ul>
-    </form>
+      <button class="subscrib-button" type="submit">
+       Підписатися
+
+       <svg class="subscrib-icon" width="24" height="24">
+        <use href="./images/spirite.svg#icon-send"></use>
+       </svg>
+      </button>
+     </form>
+    </div>
    </div>
   </footer>
 
@@ -429,34 +426,36 @@
     <form class="modal-form" autocomplete="off">
      <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
 
-     <div class="modal-inputbox">
-      <label class="modal-label" for="firstname">Ім'я</label>
-      <input class="modal-input" type="text" id="firstname" />
-      <svg class="modal-input-ico" height="18" width="18">
-       <use href="./images/spirite.svg#icon-person-black"></use>
-      </svg>
-     </div>
+     <div class="modal-fieldbox">
+      <div class="modal-inputbox">
+       <label class="modal-label" for="firstname">Ім'я</label>
+       <input class="modal-input" type="text" id="firstname" />
+       <svg class="modal-input-ico" height="18" width="18">
+        <use href="./images/spirite.svg#icon-person-black"></use>
+       </svg>
+      </div>
 
-     <div class="modal-inputbox">
-      <label class="modal-label" for="tel">Телефон</label>
-      <input class="modal-input" type="tel" name="tel" id="tel" />
-      <svg class="modal-input-ico" height="18" width="18">
-       <use href="./images/spirite.svg#icon-tel"></use>
-      </svg>
-     </div>
+      <div class="modal-inputbox">
+       <label class="modal-label" for="tel">Телефон</label>
+       <input class="modal-input" type="tel" name="tel" id="tel" />
+       <svg class="modal-input-ico" height="18" width="18">
+        <use href="./images/spirite.svg#icon-tel"></use>
+       </svg>
+      </div>
 
-     <div class="modal-inputbox">
-      <label class="modal-label" for="email-modal">Пошта</label>
-      <input class="modal-input" type="email" name="email-modal" id="email-modal" />
-      <svg class="modal-input-ico" height="18" width="18">
-       <use href="./images/spirite.svg#icon-mail"></use>
-      </svg>
-     </div>
+      <div class="modal-inputbox">
+       <label class="modal-label" for="email-modal">Пошта</label>
+       <input class="modal-input" type="email" name="email-modal" id="email-modal" />
+       <svg class="modal-input-ico" height="18" width="18">
+        <use href="./images/spirite.svg#icon-mail"></use>
+       </svg>
+      </div>
 
-     <div class="modal-inputbox">
-      <label class="modal-label" for="comment">Коментар</label>
+      <div class="modal-inputbox">
+       <label class="modal-label" for="comment">Коментар</label>
 
-      <textarea class="modal-textarea" placeholder="Введіть текст" name="comment" id="comment"></textarea>
+       <textarea class="modal-textarea" placeholder="Введіть текст" name="comment" id="comment"></textarea>
+      </div>
      </div>
 
      <div class="modal-agreebox">

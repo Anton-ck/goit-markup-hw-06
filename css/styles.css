@@ -516,7 +516,7 @@ a {
 /* ------------------------------ */
 
 .social-box {
- margin-right: 93px;
+ margin-right: auto;
 }
 
 .social-title {
@@ -572,16 +572,14 @@ a {
 }
 
 .subscrib-box {
+ position: relative;
  display: flex;
  margin-top: 20px;
-}
-
-.subscrib-item {
- position: relative;
+ margin-right: auto;
 }
 
 .subscrib-email {
- padding-left: 10px;
+ padding-left: 15px;
  margin-right: 12px;
  width: 358px;
  height: 50px;
@@ -609,7 +607,7 @@ a {
 .subscrib-label {
  position: absolute;
  top: 50%;
- left: 10%;
+ left: 40px;
  transform: translate(-50%, -50%);
 
  font-size: 16px;
@@ -857,8 +855,13 @@ a {
  display: flex;
  flex-direction: column;
  margin-bottom: 10px;
+
  margin-left: auto;
  margin-right: auto;
+}
+
+.modal-inputbox:last-child {
+ margin-bottom: 0px;
 }
 
 .modal-label {
@@ -885,14 +888,11 @@ a {
 }
 
 .modal-input-ico {
- display: flex;
- align-items: center;
- justify-content: center;
  position: absolute;
- align-self: center;
- top: 38px;
+
+ top: 50%; /* origin 38px*/
  left: 12px;
- transform: translateY(-50%);
+ /* transform: translateY(-50%); */
 
  fill: currentColor;
 
