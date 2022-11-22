@@ -14,7 +14,7 @@
 }
 
 body {
- /* margin: 0px; for fixed header */
+ /* margin: 0px;  for fixed header */
  font-family: "Roboto", sans-serif;
  color: var(--primary-color);
  letter-spacing: 0.03em;
@@ -108,7 +108,10 @@ a {
  top: 0;
  left: 0;
  width: 100%;
+ min-height: 80px;
  background-color: var(--thirdy-color);
+
+ z-index: 1;
 } */
 /* =========== End Fixed Header ============*/
 .header-navigation {
@@ -206,6 +209,7 @@ a {
 /* ------------------------------ */
 
 .order {
+ margin-top: 80px;
  padding-top: 200px;
  padding-bottom: 200px;
  background-color: var(--gray);
@@ -596,11 +600,15 @@ a {
  border-color: var(--secondary-color);
 }
 
-.subscrib-email:not(:placeholder-shown):required:invalid + .subscrib-label {
+/* .subscrib-email:not(:placeholder-shown):required:invalid + .subscrib-label {
  opacity: 0;
 }
 
 .subscrib-email:not(:placeholder-shown):required:valid + .subscrib-label {
+ opacity: 0;
+} */
+
+.subscrib-email:not(:placeholder-shown) + .subscrib-label {
  opacity: 0;
 }
 
